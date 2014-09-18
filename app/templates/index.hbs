@@ -1,0 +1,8 @@
+To do: {{input placeholder="Enter another to do" value=newTodo}}
+<button {{action 'submitTodo' newTodo}}>Submit</button>
+
+<ul>
+  {{#each model}}
+    <li>{{label}}</li>
+  {{/each}}
+</ul>

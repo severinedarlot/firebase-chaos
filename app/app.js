@@ -9,6 +9,10 @@ var App = Ember.Application.extend({
   Resolver: Resolver
 });
 
+//App.ApplicationAdapter = DS.FirebaseAdapter.extend({
+//	firebase: new Firebase('https://docs-examples.firebaseio.com/web/bindings/ember/blog')
+//});
+
 loadInitializers(App, 'firebase-chaos');
 
 export default App;
